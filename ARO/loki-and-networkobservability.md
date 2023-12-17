@@ -1,3 +1,4 @@
+# Network Observability in ARO cluster
 0. Create a New Storage Account, Storage Class as per : https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass#before-you-begin 
 
 1. Create a new Blob service.
@@ -149,7 +150,8 @@ subjects:
 ```
 
 6. Wait stabilize the Loki pods.
-7 Create the Flow Collector. Replace URL - statusURL - namespace, with the proper project name if needed.
+
+7. Create the Flow Collector. Replace URL - statusURL - namespace, with the proper project name if needed.
 ```
 apiVersion: flows.netobserv.io/v1alpha1
 kind: FlowCollector
